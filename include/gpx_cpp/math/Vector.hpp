@@ -10,7 +10,6 @@
 #ifndef GPX_VECTOR_HPP
 #define GPX_VECTOR_HPP
 
-
 namespace GPX {
 /*
  classes
@@ -92,7 +91,7 @@ namespace GPX {
 		Vector3(Vector4 vector);
 		Vector3(float x, float y, float z);
 		Vector3(float* array);
-	
+
 /*
  assign operator
 */
@@ -140,6 +139,8 @@ namespace GPX {
 		float* end();
 	};
 
+
+
 /*
  Vector4 class
 */
@@ -153,13 +154,22 @@ namespace GPX {
 		Vector4(float x, float y, float z, float w);
 		Vector4(float* array);
 
+/*
+ assign operator
+*/
 	 void	operator=(Vector2 vector);
 	 void operator=(Vector3 vector);
 	 void operator=(Vector4 vector);
 	 
+/*
+ compare operator
+*/
 		bool operator==(Vector4 vector);
 		bool operator!=(Vector4 vector);
-		
+
+/*
+ arithmetic operator
+*/
 		Vector4 operator+(Vector4 a);
 		Vector4 operator-(Vector4 a);
 		Vector4 operator*(Vector4 a);
@@ -181,9 +191,9 @@ namespace GPX {
 		Vector4& operator/=(float a);
 
 /*
- element access function
+  element access function
 */
-		float& operator[](int index);
+  float& operator[](int index);
 		
 		int GetSize();
 		float* GetData();
@@ -195,6 +205,8 @@ namespace GPX {
 /*
  other vector functions
 */
+
+
 
 /*
  vector dot product
