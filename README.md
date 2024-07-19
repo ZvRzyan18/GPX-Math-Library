@@ -16,7 +16,7 @@ Header Files
 ```
 Source Files
 ```
-include/gpx_cpp/math/MathUtils.cpp
+ include/gpx_cpp/math/MathUtils.cpp
  include/gpx_cpp/math/Matrix.cpp
  include/gpx_cpp/math/Quaternion.cpp
  include/gpx_cpp/math/Sqrt.cpp
