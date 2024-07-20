@@ -1,3 +1,12 @@
+/*
+* This file is part of GPX Project under BSD 3-Clause License
+* see LICENSE.txt
+*/
+
+/*
+ file name : QuaternionTransformation.cpp
+*/
+
 #include <iostream>
 #include "gpx_cpp/math/MathUtils.hpp"
 #include "gpx_cpp/math/Quaternion.hpp"
