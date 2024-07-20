@@ -17,6 +17,7 @@ const float GPX::PI_2 = 6.2831854820;
 const float GPX::PI_RAD = 0.0174532925;
 const float GPX::INV_PI_RAD = 57.2957801819;
 const float GPX::PI = 3.1415926535;
+const float GPX::PI_HALF = 1.5707963268;
 
 /*
  matrix projection 
