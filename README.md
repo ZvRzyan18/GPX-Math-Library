@@ -35,3 +35,17 @@ or
 ```
  cmake .. && make
 ```
+linking library
+```cmake
+ add_subdirectory(/project/directory)
+ 
+ include_directories(...
+    /project/directory/include
+    )
+ 
+ target_link_libraries(your_project GPX_Math_Static)
+ #or
+ target_link_libraries(your_project GPX_Math_Dynamic)
+
+```
+
