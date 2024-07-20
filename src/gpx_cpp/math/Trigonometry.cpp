@@ -224,7 +224,7 @@ float GPX::Asin(float x) noexcept {
 	result += 0.1854705810546875f * (pow * 0.05263f);
 	
 /*
-  Newton-Raphson iteration 
+  Newton's method
  
           (sin(x) - approximated_value)
   x = x - _____________________________
@@ -335,7 +335,7 @@ float GPX::Atan(float x) noexcept {
 	pow *= x_squared;
 	
 /*
-  Newton-Raphson iteration 
+  Newton's method
   
           (tan(x) - approximated_value)
   x = x - ______________________________
@@ -343,6 +343,7 @@ float GPX::Atan(float x) noexcept {
   
   uses 4 iteration for better accurate results
 */
+
  float tangent;
  float final_iter = result;
  
@@ -359,11 +360,11 @@ float GPX::Atan(float x) noexcept {
  final_iter = final_iter - (tangent - x) / (1.0f + tangent * tangent);
 
 
- /*
-  floating point error
+/*
+ floating point error
   
-   tan(0.73) -> tan(1.0)
- */
+  tan(0.73) -> tan(1.0)
+*/
  if(x > 1.2f) {
   final_iter /= (1.0856f * final_iter);
   return final_iter;
