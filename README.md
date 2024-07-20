@@ -2,6 +2,28 @@
 
 Simple and lightweight Math Library for graphics programming.
 
+# Sample Transformation
+
+```C++
+#include "gpx_cpp/math/MathUtils.hpp"
+
+using namespace GPX;
+
+int main() {
+ Quaternion rotation, y_rot;
+ Matrix4x4 transform;
+ 
+ EulerAngle(rotation, 3.4, 0, 0);
+ AxisAngle(y_rot, 45, 0, 1, 0);
+  
+  transform = ToMatrix4x4(Slerp(rotation, y_rot, 0.2f));
+ 
+  Translate(transform, 12.3f, 4, 0);
+  
+  Print(transform);
+ return 0;
+}
+```
 
 # Source And Header Files
 
