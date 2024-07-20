@@ -226,9 +226,9 @@ float GPX::Asin(float x) noexcept {
 /*
   Newton's method
  
-          (sin(x) - approximated_value)
-  x = x - _____________________________
-                     cos(x)
+          (sin(y) - x)
+  y = y - ____________
+            cos(y)
   
   uses 4 iteration for better accurate results
 */
@@ -337,9 +337,9 @@ float GPX::Atan(float x) noexcept {
 /*
   Newton's method
   
-          (tan(x) - approximated_value)
-  x = x - ______________________________
-          (1.0 + tan(x) ^ 2)
+             (tan(y) - x)
+  y = y - ___________________
+          (1.0 + tan(y) ^ 2)
   
   uses 4 iteration for better accurate results
 */
