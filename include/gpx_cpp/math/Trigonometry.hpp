@@ -11,6 +11,7 @@
 #define GPX_TRIGONOMETRY_HPP
 
 namespace GPX {
+
 /*
  sine
 */
@@ -25,6 +26,22 @@ float Cos(float theta) noexcept;
  tangent
 */
 float Tan(float theta) noexcept;
+
+/*
+ asin
+*/
+float Asin(float x) noexcept;
+
+/*
+ acos
+*/
+float Acos(float x) noexcept;
+
+/*
+ atan
+*/
+float Atan(float x) noexcept;
+
 
 }
 
