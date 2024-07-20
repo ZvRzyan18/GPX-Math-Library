@@ -20,10 +20,11 @@ namespace GPX {
  math constants
 */
 extern const float EPSILON;
-extern const float PI_2;
-extern const float PI_RAD;
-extern const float INV_PI_RAD;
-extern const float PI;
+extern const float PI_2; // π * 2
+extern const float PI_RAD; // π / 180
+extern const float INV_PI_RAD; // 1 / (PI_RAD)
+extern const float PI; // π
+extern const float PI_HALF; // π * 0.5
 
 /*
  matrix projection
